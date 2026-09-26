@@ -1,0 +1,234 @@
+[
+  {
+    "prompt": "放工去茶餐廳食下午茶",
+    "subtitle": "食個下午茶，邊三處值得留意？",
+    "alt": "虛構香港茶餐廳：出入口、窗邊客人與前景的外賣櫃台。",
+    "keywords": [
+      "食飯",
+      "餐廳",
+      "茶餐",
+      "下午茶",
+      "晚餐",
+      "外賣",
+      "餐厅",
+      "饭"
+    ],
+    "decoys": [
+      {
+        "id": "cup",
+        "visualLabel": "右下角的茶杯與茶碟"
+      },
+      {
+        "id": "plant",
+        "visualLabel": "窗邊的綠色盆栽"
+      }
+    ],
+    "id": "cafe",
+    "title": "茶餐廳一角",
+    "width": 960,
+    "height": 1200,
+    "clues": [
+      {
+        "id": "smoking",
+        "title": "茶餐廳室內要禁煙",
+        "visualLabel": "窗邊客人拿着燃點的香煙",
+        "rect": {
+          "x": 66,
+          "y": 19,
+          "w": 22,
+          "h": 22
+        },
+        "explanation": "食肆的室內地方屬法定禁煙區。在這個設定下，於店內吸煙或攜帶燃着的煙草產品，涉及禁煙規定；開了窗也不等於變成室外。",
+        "habit": "留意禁煙範圍，避免在室內點煙。",
+        "sourceTitle": "衞生署控煙酒辦公室：法定禁止吸煙區",
+        "sourceUrl": "https://www.taco.gov.hk/t/tc_chi/legislation/legislation_sa.html"
+      },
+      {
+        "id": "exit",
+        "title": "逃生出口唔係貨倉",
+        "visualLabel": "EXIT 門口的紙箱",
+        "rect": {
+          "x": 7,
+          "y": 1,
+          "w": 29,
+          "h": 45
+        },
+        "explanation": "若紙箱阻塞指定逃生途徑，便涉及消防安全規定，也會妨礙火警時離開。不能因為只是暫放，便把走火出口當儲物位。",
+        "habit": "保持逃生通道暢通，發現阻塞可通知場地負責人處理。",
+        "sourceTitle": "消防處：油尖旺區消防安全巡查及執法行動（逃生途徑阻塞）",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/202601/13/P2026011300587.htm"
+      },
+      {
+        "id": "orders",
+        "title": "落單資料要妥善收好",
+        "visualLabel": "櫃台上攤開的姓名及電話登記",
+        "rect": {
+          "x": 12,
+          "y": 68,
+          "w": 49,
+          "h": 26
+        },
+        "explanation": "若店方把可識別客人的姓名、電話攤在公眾面前，可能讓未獲授權的人查閱資料。《私隱條例》的保障資料第4原則要求採取切實可行的保安措施。",
+        "habit": "把登記簿收回職員範圍，只展示取餐所需的號碼。",
+        "sourceTitle": "私隱專員公署：保障資料第4原則",
+        "sourceUrl": "https://www.pcpd.org.hk/childrenprivacy/tc/six_data_protection_principles/dpp_4.html"
+      }
+    ]
+  },
+  {
+    "prompt": "第一次搵暑期工，準備去面試",
+    "subtitle": "見工之前，先睇清楚枱面三張紙。",
+    "alt": "虛構面試接待桌：三張紙本通知、求職登記表、茶杯和窗邊盆栽。",
+    "keywords": [
+      "搵工",
+      "求職",
+      "求职",
+      "打工",
+      "面試",
+      "面试",
+      "暑期",
+      "招聘",
+      "工作"
+    ],
+    "decoys": [
+      {
+        "id": "cup",
+        "visualLabel": "桌子右下角的茶杯"
+      },
+      {
+        "id": "plant",
+        "visualLabel": "窗邊的綠色盆栽"
+      }
+    ],
+    "id": "work",
+    "title": "搵工睇真啲",
+    "width": 960,
+    "height": 1200,
+    "clues": [
+      {
+        "id": "deduction",
+        "title": "扣薪唔可以亂計",
+        "visualLabel": "「遲到一次，扣薪 $300」的通告",
+        "rect": {
+          "x": 17,
+          "y": 13,
+          "w": 32,
+          "h": 26
+        },
+        "explanation": "如因缺勤扣薪，款額只能與缺勤時間成比例。把每次遲到一律當成扣薪罰款，不能只靠公司通告就取代《僱傭條例》的限制。",
+        "habit": "先問清計算方法，保留出勤及糧單紀錄。",
+        "sourceTitle": "勞工處：工資常見問題，第4題（缺勤只可按時間比例扣薪）",
+        "sourceUrl": "https://www.labour.gov.hk/tc/faq/cap57c_whole.htm"
+      },
+      {
+        "id": "interviewfee",
+        "title": "未開工先付款？停一停",
+        "visualLabel": "「面試前，先付 $800」的通知",
+        "rect": {
+          "x": 52,
+          "y": 28,
+          "w": 44,
+          "h": 20
+        },
+        "explanation": "要求見工前付款，是要先核實的求職警號。先查招聘方身分、收費用途和條款；單憑這張告示，未足以判定對方已犯詐騙罪。",
+        "habit": "未查證前別急着付款，也別為求職而借貸。",
+        "sourceTitle": "勞工處：求職一本通／提防求職陷阱",
+        "sourceUrl": "https://www.labour.gov.hk/tc/public/pdf/eip/JobHunting.pdf"
+      },
+      {
+        "id": "idcopy",
+        "title": "身份證副本唔使咁早交",
+        "visualLabel": "未取錄也要附身份證副本的表格",
+        "rect": {
+          "x": 12,
+          "y": 49,
+          "w": 50,
+          "h": 25
+        },
+        "explanation": "私隱公署的《人力資源管理實務守則》指出，僱主不應在招聘期間收集身份證副本，直至求職者已接受聘任。未接受聘任便索取副本，值得留意是否過度收集。",
+        "habit": "先了解收集目的；接受聘任後也只提供真正需要的資料。",
+        "sourceTitle": "私隱專員公署：人力資源管理實務守則，第2.2.4段",
+        "sourceUrl": "https://www.pcpd.org.hk/tc_chi/data_privacy_law/code_of_practices/files/hrdesp_c.pdf"
+      }
+    ]
+  },
+  {
+    "prompt": "週末去街坊市集買全新商品",
+    "subtitle": "價錢、用料、退換條款，邊度要問多句？",
+    "alt": "虛構香港街坊市集：價牌、啡色手袋、陶瓷杯及退換告示。",
+    "keywords": [
+      "市集",
+      "買嘢",
+      "買",
+      "买",
+      "购物",
+      "購物",
+      "擺檔",
+      "周末",
+      "週末",
+      "消費",
+      "消费"
+    ],
+    "decoys": [
+      {
+        "id": "cup",
+        "visualLabel": "右下角的綠葉茶杯"
+      },
+      {
+        "id": "plant",
+        "visualLabel": "中間後方的綠色盆栽"
+      }
+    ],
+    "id": "market",
+    "title": "市集買嘢要醒",
+    "width": 960,
+    "height": 1200,
+    "clues": [
+      {
+        "id": "totalprice",
+        "title": "先睇清實付總價",
+        "visualLabel": "$50 價牌及下面的另收 $20",
+        "rect": {
+          "x": 5,
+          "y": 10,
+          "w": 24,
+          "h": 24
+        },
+        "explanation": "這局另收的 $20 是必付費，總價其實是 $70。若重要收費被隱藏、含糊或太遲披露，並影響交易決定，可能涉及誤導性遺漏；額外收費本身不一定違法。",
+        "habit": "付款前確認總額、必付費用及計價方式。",
+        "sourceTitle": "香港海關及通訊事務管理局：《商品說明條例》執法指引（第13E條）",
+        "sourceUrl": "https://www.customs.gov.hk/hcms/filemanager/common/pdf/pdf_forms/Enforcement_Guidelines2_tc.pdf"
+      },
+      {
+        "id": "material",
+        "title": "用料聲稱要對得上",
+        "visualLabel": "手袋旁的「全真皮」牌與 PU 標籤",
+        "rect": {
+          "x": 54,
+          "y": 14,
+          "w": 45,
+          "h": 45
+        },
+        "explanation": "牌寫「全真皮」，同一袋身標籤卻寫合成物料，兩者值得核實。若商戶在營商過程中就物料作出虛假說明，可能涉及《商品說明條例》。這不等於憑相片已鑑定出假貨。",
+        "habit": "核對完整物料說明，請商戶把承諾寫在單據上。",
+        "sourceTitle": "香港海關：商品說明（包括貨品成份與聲稱不符）",
+        "sourceUrl": "https://www.customs.gov.hk/tc/service-enforcement-information/consumer-protection/trade-desc/index.html"
+      },
+      {
+        "id": "refund",
+        "title": "告示唔會抹走法定保障",
+        "visualLabel": "裂了的白色杯與「一律不退」牌",
+        "rect": {
+          "x": 5,
+          "y": 63,
+          "w": 54,
+          "h": 22
+        },
+        "explanation": "若杯按完好新品出售，交付時已有未披露的缺陷，商戶不能單靠「一律不退」卸除相關法定責任。單純買後改變主意則不同，不能保證任何情況都可退款。",
+        "habit": "盡快檢查貨品，保存單據及問題紀錄，再向商戶反映。",
+        "sourceTitle": "香港政府：關於網上購物的投訴（第71章第11條及貨品隱含保障）",
+        "sourceUrl": "https://www.info.gov.hk/gia/general/201205/16/P201205160218.htm"
+      }
+    ]
+  }
+]

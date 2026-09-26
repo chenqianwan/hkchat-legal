@@ -1,0 +1,319 @@
+{
+  "reviewedAt": "2026-09-27",
+  "themes": [
+    {
+      "id": "consumer",
+      "label": "消費",
+      "icon": "bag",
+      "description": "買嘢、報價、講約定",
+      "variants": [
+        {
+          "title": "街坊小店的一天",
+          "pairs": [
+            {
+              "concept": "oral",
+              "place": "修鞋舖",
+              "scene": "講好 $200 換鞋底，雙方答應了，卻沒有簽紙。"
+            },
+            {
+              "concept": "offer",
+              "place": "影相報價",
+              "scene": "攝影師說「$800 就替你影」，你回「$600 就訂」，對方未答。"
+            },
+            {
+              "concept": "evidence",
+              "place": "維修收據",
+              "scene": "師傅說不包零件，你想找出當初約定的維修範圍。"
+            },
+            {
+              "concept": "mediation",
+              "place": "買衫爭議",
+              "scene": "跟商戶談不攏，想找消委會協助商量退款。"
+            }
+          ]
+        },
+        {
+          "title": "週末買嘢小插曲",
+          "pairs": [
+            {
+              "concept": "oral",
+              "place": "訂生日蛋糕",
+              "scene": "店員答應 $300 做蛋糕，你也答應了，沒有簽合約。"
+            },
+            {
+              "concept": "offer",
+              "place": "洗衣報價",
+              "scene": "店員說「$120 就替你洗」，你回「$100 就洗」，對方未答。"
+            },
+            {
+              "concept": "evidence",
+              "place": "訂造書架",
+              "scene": "店方說價錢不包安裝，你要證明當初曾答應包安裝。"
+            },
+            {
+              "concept": "mediation",
+              "place": "電器退換",
+              "scene": "與電器舖爭拗退換安排，希望消委會幫忙協商。"
+            }
+          ]
+        }
+      ],
+      "customOpeners": [
+        {
+          "place": "主題小店",
+          "scene": "「{topic}」小店答應 $200 訂貨，你也答應了，但未簽紙。"
+        },
+        {
+          "place": "主題市集",
+          "scene": "在「{topic}」攤檔，雙方講好 $300 訂貨，沒有簽合約。"
+        }
+      ]
+    },
+    {
+      "id": "work",
+      "label": "打工",
+      "icon": "briefcase",
+      "description": "出糧、扣薪、簽合約",
+      "variants": [
+        {
+          "title": "返工有啲嘢要知",
+          "pairs": [
+            {
+              "concept": "deduction",
+              "place": "茶餐廳返工",
+              "scene": "只遲到 10 分鐘，主管卻想按缺勤扣半天基本工資。"
+            },
+            {
+              "concept": "rights",
+              "place": "新工簽約",
+              "scene": "合約要求你放棄《僱傭條例》原本適用的保障。"
+            },
+            {
+              "concept": "payday",
+              "place": "月尾出糧",
+              "scene": "工資期已完，僱主說到期工資要再等三星期。"
+            },
+            {
+              "concept": "copy",
+              "place": "人事部",
+              "scene": "書面僱傭合約簽好了，公司卻不給你一份副本。"
+            }
+          ]
+        },
+        {
+          "title": "一星期的打工日常",
+          "pairs": [
+            {
+              "concept": "deduction",
+              "place": "店舖輪更",
+              "scene": "只缺勤 15 分鐘，經理卻說按缺勤扣足一天基本工資。"
+            },
+            {
+              "concept": "rights",
+              "place": "續約通知",
+              "scene": "續約條款想取消《僱傭條例》原本給你的法定權益。"
+            },
+            {
+              "concept": "payday",
+              "place": "出糧訊息",
+              "scene": "工資期已屆滿，公司說月底太忙，下月中才付到期工資。"
+            },
+            {
+              "concept": "copy",
+              "place": "入職文件",
+              "scene": "你簽妥書面僱傭合約，人事說只供公司保存。"
+            }
+          ]
+        }
+      ],
+      "customOpeners": [
+        {
+          "place": "工作坊返工",
+          "scene": "在「{topic}」工作坊只遲到10分鐘，主管想按缺勤扣半天基本工資。"
+        },
+        {
+          "place": "工作坊輪更",
+          "scene": "在「{topic}」工作坊只缺勤15分鐘，經理想按缺勤扣一天基本工資。"
+        }
+      ]
+    },
+    {
+      "id": "privacy",
+      "label": "私隱",
+      "icon": "shield",
+      "description": "認人線索、資料點用",
+      "variants": [
+        {
+          "title": "網上分享的四個瞬間",
+          "pairs": [
+            {
+              "concept": "identify",
+              "place": "街坊群組",
+              "scene": "截圖刪了姓名，留下人臉與門牌，街坊仍認得住戶。"
+            },
+            {
+              "concept": "purpose",
+              "place": "網店宣傳",
+              "scene": "店舖想把送貨用的實名訂單公開作宣傳，客人未同意。"
+            },
+            {
+              "concept": "access",
+              "place": "會員記錄",
+              "scene": "你想知道公司存了哪些自己的資料，並索取副本。"
+            },
+            {
+              "concept": "marketing",
+              "place": "推廣訊息",
+              "scene": "曾答應接收店舖直銷，現在想停止收到這些訊息。"
+            }
+          ]
+        },
+        {
+          "title": "手機裏的私隱線索",
+          "pairs": [
+            {
+              "concept": "identify",
+              "place": "活動相簿",
+              "scene": "相簿沒寫名字，但清楚的樣貌與制服仍能認出在世同事。"
+            },
+            {
+              "concept": "purpose",
+              "place": "活動報名",
+              "scene": "機構想把只為報名收集的姓名電話公開作宣傳，未取同意。"
+            },
+            {
+              "concept": "access",
+              "place": "服務申請",
+              "scene": "你想查閱服務商持有的自己的申請資料，並取得副本。"
+            },
+            {
+              "concept": "marketing",
+              "place": "健身推廣",
+              "scene": "曾同意健身店直銷，現在想要求對方不用你的資料作直銷。"
+            }
+          ]
+        }
+      ],
+      "customOpeners": [
+        {
+          "place": "主題群組",
+          "scene": "「{topic}」群組截圖刪了姓名，留下人臉與門牌，仍能認出住戶。"
+        },
+        {
+          "place": "主題相簿",
+          "scene": "「{topic}」相簿沒寫名字，樣貌與制服仍能認出在世同事。"
+        }
+      ]
+    }
+  ],
+  "concepts": {
+    "oral": {
+      "label": "口頭合約",
+      "subtitle": "沒簽紙，也可能成立",
+      "hint": "想一想：法律是否一定要求一般消費約定有簽名？",
+      "explanation": "一般消費合約未必需要書面訂立；是否成立，要看要約、接受、代價及訂約意圖等要素。",
+      "legalLabel": "普通法 · 合約的成立",
+      "sourceLabel": "香港大學社區法網：何為合約",
+      "sourceUrl": "https://www.clic.org.hk/zh/topics/consumer_complaints/consumer_contracts/q1"
+    },
+    "offer": {
+      "label": "反要約",
+      "subtitle": "改條件，等對方答應",
+      "hint": "留意你是否改了對方開出的價錢，而對方還未接受。",
+      "explanation": "改價還價是提出新條件，不能單憑自己的回覆，就當對方已接受新價錢。",
+      "legalLabel": "普通法 · 要約與接受",
+      "sourceLabel": "香港大學社區法網：何為合約",
+      "sourceUrl": "https://www.clic.org.hk/zh/topics/consumer_complaints/consumer_contracts/q1"
+    },
+    "evidence": {
+      "label": "約定的證據",
+      "subtitle": "完整記錄，對應爭點",
+      "hint": "這題想確認的是當初答應了甚麼，可以翻查哪類記錄？",
+      "explanation": "爭議在約定範圍時，保留完整報價及雙方確認的對話有助說明內容；證據仍須由審裁處結合全案判斷。",
+      "legalLabel": "小額錢債程序 · 文件證據",
+      "sourceLabel": "司法機構：小額錢債審裁處",
+      "sourceUrl": "https://www.judiciary.hk/zh/court_services_facilities/sc.html"
+    },
+    "mediation": {
+      "label": "消費調停",
+      "subtitle": "協助商量，不作裁決",
+      "hint": "這個機構是協助雙方溝通，還是代法庭作出命令？",
+      "explanation": "消委會協助消費者和商戶尋找和解方法，沒有裁決權，不能保證退款或命令商戶退款。",
+      "legalLabel": "消費爭議 · 調停與裁決",
+      "sourceLabel": "消費者委員會：投訴及服務",
+      "sourceUrl": "https://www.consumer.org.hk/tc/complaints-and-services"
+    },
+    "deduction": {
+      "label": "缺勤扣薪限制",
+      "subtitle": "金額與缺勤時間成比例",
+      "hint": "比較實際缺勤多久，以及僱主想按缺勤扣多少工資。",
+      "explanation": "就缺勤扣薪而言，扣除款額須與實際缺勤時間成比例，不能把短暫遲到當成半天或一天缺勤。",
+      "legalLabel": "《僱傭條例》· 工資扣除",
+      "sourceLabel": "勞工處：工資常見問題",
+      "sourceUrl": "https://www.labour.gov.hk/tc/faq/cap57c_whole.htm"
+    },
+    "rights": {
+      "label": "放棄權益條款無效",
+      "subtitle": "簽名也不能取消保障",
+      "hint": "想一想：合約條款可否減少條例原本賦予的權利？",
+      "explanation": "僱傭合約如有條款取消或減少《僱傭條例》原本適用的權利、利益或保障，該條款無效。",
+      "legalLabel": "《僱傭條例》· 法定保障",
+      "sourceLabel": "勞工處：僱傭合約常見問題",
+      "sourceUrl": "https://www.labour.gov.hk/tc/faq/cap57b_whole.htm"
+    },
+    "payday": {
+      "label": "工資支付期限",
+      "subtitle": "盡快支付，並有最遲期限",
+      "hint": "留意工資期是否已完，以及到期工資何時支付。",
+      "explanation": "到期工資應盡快支付，一般不得遲於工資期屆滿後七天；七天上限不等於可任意延後約定發薪日。",
+      "legalLabel": "《僱傭條例》· 到期工資",
+      "sourceLabel": "勞工處：工資常見問題",
+      "sourceUrl": "https://www.labour.gov.hk/tc/faq/cap57c_whole.htm"
+    },
+    "copy": {
+      "label": "僱傭合約副本",
+      "subtitle": "簽完，應有一份可保存",
+      "hint": "不是再簽一次，而是能否取得已簽書面合約的副本。",
+      "explanation": "僱傭合約以書面訂立時，僱主須給僱員一份副本，讓僱員參考和保存。",
+      "legalLabel": "《僱傭條例》· 書面合約",
+      "sourceLabel": "勞工處：僱傭合約常見問題",
+      "sourceUrl": "https://www.labour.gov.hk/tc/faq/cap57b_whole.htm"
+    },
+    "identify": {
+      "label": "個人資料識別",
+      "subtitle": "不只姓名，線索也能認人",
+      "hint": "即使沒有姓名，能否從其餘記錄認出是哪個在世人士？",
+      "explanation": "記錄能直接或間接識別在世人士，便可能屬個人資料；只刪姓名未必足以匿名。",
+      "legalLabel": "《個人資料（私隱）條例》· 第2條",
+      "sourceLabel": "私隱專員公署：常問問題",
+      "sourceUrl": "https://www.pcpd.org.hk/tc_chi/individuals/faqs/faqs.html"
+    },
+    "purpose": {
+      "label": "資料新用途",
+      "subtitle": "原有目的以外，留意同意",
+      "hint": "資料原本為甚麼而收集？公開宣傳是否另一個用途？",
+      "explanation": "資料改作原有或直接相關目的以外的新用途，沒有適用豁免時，須先取得當事人明確、自願的訂明同意。",
+      "legalLabel": "《個人資料（私隱）條例》· 保障資料第3原則",
+      "sourceLabel": "私隱專員公署：資料使用與豁免",
+      "sourceUrl": "https://www.pcpd.org.hk/tc_chi/enforcement/case_notes/casenotes_2.php?content_nature=&content_type=&id=2024E07&msg_id2=583"
+    },
+    "access": {
+      "label": "查閱資料要求",
+      "subtitle": "查閱機構持有的自己資料",
+      "hint": "這題關心的是查看自己的記錄和取得副本。",
+      "explanation": "查閱資料有正式程序；一般在核實身份及沒有適用拒絕理由等情況下，機構須在收到要求後40個曆日內依從。",
+      "legalLabel": "《個人資料（私隱）條例》· 查閱權",
+      "sourceLabel": "私隱專員公署：查閱資料要求指引",
+      "sourceUrl": "https://www.pcpd.org.hk/tc_chi/publications/files/DAR_c.pdf"
+    },
+    "marketing": {
+      "label": "拒收直接促銷",
+      "subtitle": "曾經同意，也可以再拒絕",
+      "hint": "重點是能否改變接收直銷的決定，而不是刪去所有記錄。",
+      "explanation": "即使曾同意接收直接促銷，也可隨時要求對方停止使用自己的個人資料作該用途。",
+      "legalLabel": "《個人資料（私隱）條例》· 直接促銷",
+      "sourceLabel": "私隱專員公署：直銷常問問題",
+      "sourceUrl": "https://www.pcpd.org.hk/tc_chi/individuals/faqs/faqs.html"
+    }
+  }
+}

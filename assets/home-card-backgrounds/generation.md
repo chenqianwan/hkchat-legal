@@ -1,7 +1,7 @@
 # HKChat Legal · 首頁卡片背景
 
 生成方式：內置 imagegen 工具，每個應用入口分別生成一張主題攝影背景。照片為 AI 創作，不代表真實人物、活動或個案。
-成品：640 × 480 WebP。六張圖各嵌入首頁 HTML 一次，卡片文字和「玩法」按钮使用獨立 HTML，手機及離線版均可使用。
+成品：640 × 480 WebP。七張圖各嵌入首頁 HTML 一次，卡片文字和「玩法」按钮使用獨立 HTML，手機及離線版均可使用。
 
 ## 圖片
 - [法律你識幾多？](./quiz.webp)
@@ -9,7 +9,8 @@
 - [今日我做議員](./council.webp)
 - [醒目防騙](./fraud.webp)
 - [街坊和事佬](./mediation.webp)
-- [呢個 Post 出唔出？](./share.webp)
+- [法律大找茬](./share.webp)
+- [法律連連看](./match.webp)
 
 ## 最終提示詞
 
@@ -63,12 +64,6 @@ Theme: helping neighbors find common ground. Warm candid editorial photograph in
 ```
 
 
-### 呢個 Post 出唔出？
+### 法律大找茬與法律連連看
 
-```text
-Use case: photorealistic-natural.
-Asset type: Background photograph for one small application entry card in a Hong Kong everyday legal education mobile app.
-Generate a SINGLE full-bleed realistic editorial photograph, landscape 4:3, not a screenshot or card mockup. Premium natural photography with convincing materials and lighting, one clear focal subject, quiet uncluttered composition recognizable as a small thumbnail. Compose main subject in UPPER RIGHT / middle-right, reserve LEFT and especially LOWER LEFT for a later white title and short text overlay; the app will add those, do NOT generate any overlay text. Subtly moody, rich photographic color, softly shadowed foreground, realistic depth of field. No typography, no readable words/numbers, no logos, no watermark, no borders, no floating icons, no official insignia, no illustrated or vector style. No collage.
-Theme: checking privacy before sharing a photograph. A realistic editorial close-up of a person holding an unbranded smartphone at upper-right, viewed over shoulder with only a subtle shoulder silhouette at far right, no face. The phone screen displays a simple photograph preview of a small anonymous cardboard parcel beside a home doorway; address label is naturally out of focus with NO legible information. No interface words, no text, no visible personal data. A fingertip hovers thoughtfully at the screen edge as though reviewing the image before posting, not tapping. Soft cyan and blue apartment-window light with warm skin tones, clean everyday home scene, quiet slate-blue left and lower foreground. The phone is clearly distinct from a call screen, image preview is the important visual. No padlock icons, no warning banners, no logos.
-```
-
+大找茬使用新茶餐廳照片上方的裁切；連連看使用新生成的配對桌面。完整提示詞見 [新圖片生成記錄](../spot-scenes/generation.md)。
