@@ -1,0 +1,7 @@
+{
+  "assetUrl": "https://chat.hkchat.app/download/assets/logo.svg",
+  "sourcePage": "https://chat.hkchat.app/download.html",
+  "requestedReference": "https://chat.hkchat.app/login",
+  "sha256": "66d17b42e98efcf3804d4752e6a1435dd4bc23e136d189d45e3f9888b02cc143",
+  "usage": "Original SVG bytes embedded in each standalone HTML; artwork and colors unchanged."
+}
