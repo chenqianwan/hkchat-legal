@@ -1,4 +1,27 @@
-<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>HKChat Legal · 首頁</title><script>(() => {let state=null;const key='hkchat-mobile:'+location.pathname;try{state=JSON.parse(localStorage.getItem(key)||'null')}catch{}window.openai={widgetState:state,setWidgetState:async function(next){this.widgetState=next;try{localStorage.setItem(key,JSON.stringify(next))}catch{}}};})();</script><style>html,body{margin:0;padding:0!important;width:100%;min-height:100%;overflow-x:clip;scroll-behavior:auto}body{display:block;background:light-dark(#f7f7f8,#100e13)}#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome{min-height:100svh;max-width:480px;margin:0 auto;border-radius:0!important}input,textarea,select{font-size:16px}button,a,input,select,textarea,summary{touch-action:manipulation}button{-webkit-tap-highlight-color:transparent}noscript{display:block;padding:24px;font:16px sans-serif}</style><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17151b" media="(prefers-color-scheme: dark)"></head><body>
+<!doctype html><html lang="zh-Hans"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>HKChat Legal · 首頁</title><script>(() => {
+  const navigation = performance.getEntriesByType?.('navigation')[0];
+  const isReload = navigation ? navigation.type === 'reload' : performance.navigation?.type === 1;
+  if (!isReload) return;
+
+  // Run before any app restores progress; leave other projects' storage intact.
+  for (const name of ['localStorage', 'sessionStorage']) {
+    try {
+      const storage = window[name];
+      // Snapshot first: removing keys can reorder Storage.key() during iteration.
+      const keys = Array.from({ length: storage.length }, (_, i) => storage.key(i));
+      for (const key of keys) {
+        if (key?.startsWith('hkchat-')) storage.removeItem(key);
+      }
+    } catch {}
+  }
+  if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+  window.addEventListener('pageshow', () => {
+    window.scrollTo(0, 0);
+    requestAnimationFrame(() => window.scrollTo(0, 0));
+  }, { once: true });
+})();
+
+(() => {let state=null;const key='hkchat-mobile:'+location.pathname;try{state=JSON.parse(localStorage.getItem(key)||'null')}catch{}window.openai={widgetState:state,setWidgetState:async function(next){this.widgetState=next;try{localStorage.setItem(key,JSON.stringify(next))}catch{}}};})();</script><style>html,body{margin:0;padding:0!important;width:100%;min-height:100%;overflow-x:clip;scroll-behavior:auto}body{display:block;background:light-dark(#f7f7f8,#100e13)}#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome{min-height:100svh;max-width:480px;margin:0 auto;border-radius:0!important}input,textarea,select{font-size:16px}button,a,input,select,textarea,summary{touch-action:manipulation}button{-webkit-tap-highlight-color:transparent}noscript{display:block;padding:24px;font:16px sans-serif}</style><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17151b" media="(prefers-color-scheme: dark)"></head><body>
 <noscript>请在手机浏览器中打开此 HTML，并启用 JavaScript 来体验交互。</noscript>
 <script>
 /**
