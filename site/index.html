@@ -55,7 +55,12 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
 #hkhome .home-card-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
 #hkhome .home-icon{display:grid;place-items:center;width:36px;height:36px;border-radius:12px;flex-shrink:0;background:var(--p-soft);color:var(--p-primary)}
 #hkhome .home-icon svg{width:21px;height:21px;stroke-width:1.7}
-#hkhome .home-card-arrow{width:16px;height:16px;color:var(--p-muted);opacity:.8}
+#hkhome .home-card-link::after{content:"";position:absolute;inset:0;border-radius:19px}
+#hkhome .home-card-link:focus-visible{outline:none}
+#hkhome .home-card-link:focus-visible::after{outline:3px solid var(--p-primary);outline-offset:4px}
+#hkhome .home-info{position:relative;z-index:1;display:flex;align-items:center;justify-content:center;gap:3px;min-width:48px;min-height:44px;margin:-4px -5px -4px 0;padding:0 4px;border:0;border-radius:11px;background:transparent;color:var(--p-muted);font:inherit;font-size:11px;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent}
+#hkhome .home-info svg{width:13px;height:13px}
+#hkhome .home-info:hover,#hkhome .home-info:active{background:var(--p-soft);color:var(--p-primary)}
 #hkhome .home-app h2{font-family:inherit;font-size:17px;font-weight:600;line-height:1.45;letter-spacing:-.3px;min-height:49px;color:var(--p-text)}
 #hkhome .home-title-line{display:block}
 #hkhome .home-app p{font-size:12px;color:var(--p-muted);line-height:1.75;margin-top:5px;flex:1}
@@ -67,6 +72,27 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
 #hkhome .home-note{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:22px;font-size:11px;line-height:1.8;color:var(--p-muted)}
 #hkhome .home-note svg{width:14px;height:14px;color:var(--p-primary)}
 #hkhome .p-footer{margin-top:0;padding-top:13px}
+html.home-howto-open,html.home-howto-open body{overflow:hidden}
+#hkhome .home-howto{position:fixed;inset:0;margin:auto auto 0;width:min(100%,480px);max-width:100%;max-height:85dvh;padding:0;border:1px solid var(--p-line);border-bottom:0;border-radius:25px 25px 0 0;background:var(--p-surface);color:var(--p-text);box-shadow:0 -10px 60px #0003;overflow-y:auto;overscroll-behavior:contain}
+#hkhome .home-howto::backdrop{background:#100b18a8;backdrop-filter:blur(3px)}
+#hkhome .home-sheet-grip{width:35px;height:4px;margin:10px auto 0;border-radius:4px;background:var(--p-line)}
+#hkhome .home-sheet-head{display:flex;align-items:center;gap:10px;padding:12px 20px 0}
+#hkhome .home-sheet-head .home-icon{width:34px;height:34px;border-radius:11px}
+#hkhome .home-sheet-label{font-size:12px;color:var(--p-muted);flex:1}
+#hkhome .home-sheet-close{display:grid;place-items:center;width:44px;height:44px;margin-right:-8px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--p-muted);cursor:pointer}
+#hkhome .home-sheet-close svg{width:21px;height:21px}
+#hkhome .home-sheet-close:hover{background:var(--p-soft)}
+#hkhome .home-sheet-body{padding:14px 22px max(24px,env(safe-area-inset-bottom))}
+#hkhome .home-sheet-body h2{font-size:25px;line-height:1.4;letter-spacing:-.5px}
+#hkhome .home-sheet-intro{margin-top:10px;font-size:14px;line-height:1.85;color:var(--p-muted)}
+#hkhome .home-sheet-steps{display:grid;gap:19px;list-style:none;margin:25px 0 27px;padding:0}
+#hkhome .home-sheet-steps li{display:flex;align-items:flex-start;gap:12px}
+#hkhome .home-step-number{display:grid;place-items:center;width:27px;height:27px;flex-shrink:0;border-radius:9px;background:var(--p-soft);color:var(--p-primary);font-size:12px;font-weight:600}
+#hkhome .home-sheet-steps h3{margin:1px 0 5px;font-size:15px;line-height:1.5;font-weight:600}
+#hkhome .home-sheet-steps p{font-size:13px;line-height:1.85;color:var(--p-muted)}
+#hkhome .home-sheet-start{display:flex;align-items:center;justify-content:center;gap:9px;min-height:49px;padding:12px 20px;border-radius:26px;background:var(--p-primary);color:var(--p-on);font-size:14px;font-weight:600}
+#hkhome .home-sheet-start svg{width:18px;height:18px}
+@media(min-width:600px){#hkhome .home-howto{margin:auto;border:1px solid var(--p-line);border-radius:25px}#hkhome .home-sheet-grip{display:none}#hkhome .home-sheet-head{padding-top:18px}}
 @media(hover:hover){#hkhome .home-app:hover{border-color:var(--p-primary);transform:translateY(-2px)}}
 #hkhome .home-app:active{background:var(--p-soft)}
 @media(max-width:350px){#hkhome .home-main{padding:22px 14px max(22px,env(safe-area-inset-bottom))}#hkhome .home-hero h1{font-size:25px}#hkhome .home-hero p{font-size:12px}#hkhome .home-grid{gap:10px}#hkhome .home-app{padding:14px 12px;border-radius:17px}#hkhome .home-app h2{font-size:16px;min-height:47px}#hkhome .home-app p{font-size:11px;line-height:1.8}#hkhome .home-icon{width:34px;height:34px}}
@@ -80,40 +106,206 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
   <p>由細字到街坊事，揀個情境試吓。</p>
  </section>
  <section class="home-grid" aria-label="揀選生活法律應用">
-  <a class="home-app" data-app="quiz" href="hkchat-quiz-mobile.html" aria-labelledby="home-quiz-title" aria-describedby="home-quiz-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="trophy" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-quiz-title">法律<span class="home-title-line">你識幾多？</span></h2>
+  <article class="home-app" data-app="quiz">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="trophy" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="quiz" aria-label="查看法律你識幾多？的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-quiz-title"><a class="home-card-link" href="hkchat-quiz-mobile.html" aria-describedby="home-quiz-desc">法律<span class="home-title-line">你識幾多？</span></a></h2>
    <p id="home-quiz-desc">答幾條生活題，睇吓你識幾多。</p>
-  </a>
-  <a class="home-app" data-app="fineprint" href="hkchat-fineprint-mobile.html" aria-labelledby="home-fineprint-title" aria-describedby="home-fineprint-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="file-search" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-fineprint-title">細字睇真啲</h2>
+  </article>
+  <article class="home-app" data-app="fineprint">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="file-search" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="fineprint" aria-label="查看細字睇真啲的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-fineprint-title"><a class="home-card-link" href="hkchat-fineprint-mobile.html" aria-describedby="home-fineprint-desc">細字睇真啲</a></h2>
    <p id="home-fineprint-desc">優惠咁吸引，條款有冇伏？</p>
-  </a>
-  <a class="home-app" data-app="council" href="hkchat-council-mobile.html" aria-labelledby="home-council-title" aria-describedby="home-council-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="landmark" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-council-title">今日我做議員</h2>
+  </article>
+  <article class="home-app" data-app="council">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="landmark" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="council" aria-label="查看今日我做議員的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-council-title"><a class="home-card-link" href="hkchat-council-mobile.html" aria-describedby="home-council-desc">今日我做議員</a></h2>
    <p id="home-council-desc">揀地區、提議案，聽聽街坊點睇。</p>
-  </a>
-  <a class="home-app" data-app="fraud" href="hkchat-fraud-mobile.html" aria-labelledby="home-fraud-title" aria-describedby="home-fraud-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="scan-search" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-fraud-title">醒目防騙</h2>
+  </article>
+  <article class="home-app" data-app="fraud">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="scan-search" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="fraud" aria-label="查看醒目防騙的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-fraud-title"><a class="home-card-link" href="hkchat-fraud-mobile.html" aria-describedby="home-fraud-desc">醒目防騙</a></h2>
    <p id="home-fraud-desc">聽佢點講，睇吓邊度唔對路。</p>
-  </a>
-  <a class="home-app" data-app="mediation" href="hkchat-mediation-mobile.html" aria-labelledby="home-mediation-title" aria-describedby="home-mediation-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="handshake" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-mediation-title">街坊和事佬</h2>
+  </article>
+  <article class="home-app" data-app="mediation">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="handshake" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="mediation" aria-label="查看街坊和事佬的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-mediation-title"><a class="home-card-link" href="hkchat-mediation-mobile.html" aria-describedby="home-mediation-desc">街坊和事佬</a></h2>
    <p id="home-mediation-desc">街坊有拗撬，幫兩邊搵個出路。</p>
-  </a>
-  <a class="home-app" data-app="share" href="hkchat-share-mobile.html" aria-labelledby="home-share-title" aria-describedby="home-share-desc">
-   <div class="home-card-top"><span class="home-icon"><i data-lucide="message-circle" aria-hidden="true"></i></span><i class="home-card-arrow" data-lucide="arrow-up-right" aria-hidden="true"></i></div>
-   <h2 id="home-share-title">呢個 Post<span class="home-title-line">出唔出？</span></h2>
+  </article>
+  <article class="home-app" data-app="share">
+   <div class="home-card-top"><span class="home-icon"><i data-lucide="message-circle" aria-hidden="true"></i></span><button class="home-info" type="button" data-howto="share" aria-label="查看呢個 Post 出唔出？的玩法" aria-haspopup="dialog" aria-controls="home-howto" aria-expanded="false"><span>玩法</span><i data-lucide="chevron-down" aria-hidden="true"></i></button></div>
+   <h2 id="home-share-title"><a class="home-card-link" href="hkchat-share-mobile.html" aria-describedby="home-share-desc">呢個 Post<span class="home-title-line">出唔出？</span></a></h2>
    <p id="home-share-desc">張相有冇漏私隱？出之前睇清楚。</p>
-  </a>
+  </article>
  </section>
  <p class="home-note"><i data-lucide="book-open" aria-hidden="true"></i>從日常小事，識多一點。</p>
 <footer class="p-footer">HKChat · Legal</footer></main>
+<dialog class="home-howto" id="home-howto" aria-labelledby="home-howto-title" aria-describedby="home-howto-intro">
+ <div class="home-sheet-grip" aria-hidden="true"></div>
+ <div class="home-sheet-head"><span class="home-icon" id="home-howto-icon" aria-hidden="true"></span><span class="home-sheet-label">玩法說明</span><button class="home-sheet-close" type="button" aria-label="關閉玩法說明" autofocus><i data-lucide="x" aria-hidden="true"></i></button></div>
+ <div class="home-sheet-body">
+  <h2 id="home-howto-title"></h2>
+  <p class="home-sheet-intro" id="home-howto-intro"></p>
+  <ol class="home-sheet-steps" id="home-howto-steps"></ol>
+  <a class="home-sheet-start" id="home-howto-start" href="hkchat-quiz-mobile.html">開始玩<i data-lucide="arrow-right" aria-hidden="true"></i></a>
+ </div>
+</dialog>
 </div>
+<script>
+{
+const HOWTO = {
+  "quiz": {
+    "intro": "由生活小事出發，五關學識一點香港法律。",
+    "steps": [
+      [
+        "揀個生活情境",
+        "揀個話題，或者輸入想練習的情境，開始五關挑戰。"
+      ],
+      [
+        "逐關作答",
+        "每關揀一個答案，即時睇解說；有時換個條件，再試你的判斷。"
+      ],
+      [
+        "回看學識咗乜",
+        "完成後回看易混淆的規則，再揀新話題，或者重練未掌握的部分。"
+      ]
+    ]
+  },
+  "fineprint": {
+    "intro": "優惠好吸引，睇埋細字先知有咩條件。",
+    "steps": [
+      [
+        "揀張優惠廣告",
+        "揀現有廣告，或者生成一個新挑戰，試試另一個生活場景。"
+      ],
+      [
+        "圈出要留意的細字",
+        "對照廣告和五條細字，找出重要條件；拿不準，可以點選問題問店員。"
+      ],
+      [
+        "揭開條款裡的玄機",
+        "提交後逐條對答案，睇清額外收費、使用限制，以及哪些只是正常說明。"
+      ]
+    ]
+  },
+  "council": {
+    "intro": "做一次提案人，聽街坊意見，試改一條社區規則。",
+    "steps": [
+      [
+        "揀區，再提案",
+        "從四個香港地區揀一區，再揀當區生活議題，或者寫下想討論的事。"
+      ],
+      [
+        "聽意見、改方案",
+        "聽三位虛構角色表態，勾選可疊加的修訂，也可以補充自己的想法。"
+      ],
+      [
+        "討論同表決",
+        "最多討論三輪，亦可隨時表決；看看哪些修改得到支持，哪些仍有分歧。"
+      ]
+    ]
+  },
+  "fraud": {
+    "intro": "聽說法、問疑點，找出虛構個案中的誤導風險。",
+    "steps": [
+      [
+        "揀個防騙場景",
+        "從留港學生、保健保險等領域揀個場景，或者輸入想練習的話題。"
+      ],
+      [
+        "有疑問，就追問",
+        "每輪可揀一位角色，點預設問題或自己打字追問，再對照調查記錄。"
+      ],
+      [
+        "隨時作出判斷",
+        "最多聊五輪，隨時可以指出誰有騙人風險，揭開線索並學一招防騙方法。"
+      ]
+    ]
+  },
+  "mediation": {
+    "intro": "兩邊都有話要講，由你問一句，幫街坊搵出路。",
+    "steps": [
+      [
+        "先聽兩邊講",
+        "揀個街坊糾紛，或者輸入想練習的矛盾，先聽雙方各自最在意甚麼。"
+      ],
+      [
+        "試一個協調方案",
+        "提出問題，再組合可行的安排；聽雙方回應，調整未能談攏的部分。"
+      ],
+      [
+        "整理共識同分歧",
+        "最多談三輪，也可隨時收尾；分清已同意的安排，以及仍要處理的分歧。"
+      ]
+    ]
+  },
+  "share": {
+    "intro": "相片遮好未？配文有冇洩露資料？出 Post 前試一試。",
+    "steps": [
+      [
+        "圖片、文字一齊查",
+        "揀張虛構照片，點選要遮住的資料，再移除配文中的姓名、地址等線索。"
+      ],
+      [
+        "揀分享對象",
+        "決定發到群組、只給指定人士，或者暫不分享，看看選擇有何影響。"
+      ],
+      [
+        "睇風險、再修改",
+        "查看未處理資料涉及的私隱法律風險，再返回修改，對比不同分享安排。"
+      ]
+    ]
+  }
+};
+(() => {
+  const root = document.getElementById('hkhome');
+  const dialog = root.querySelector('#home-howto');
+  const start = root.querySelector('#home-howto-start');
+  let trigger = null;
+  root.addEventListener('click', event => {
+    const button = event.target.closest('[data-howto]');
+    const copy = button && HOWTO[button.dataset.howto];
+    if (!copy || dialog.open) return;
+    const card = button.closest('.home-app');
+    trigger = button;
+    root.querySelector('#home-howto-title').textContent = card.querySelector('h2').textContent;
+    root.querySelector('#home-howto-intro').textContent = copy.intro;
+    root.querySelector('#home-howto-icon').replaceChildren(card.querySelector('.home-icon').firstElementChild.cloneNode(true));
+    root.querySelector('#home-howto-steps').replaceChildren(...copy.steps.map(([title, text], index) => {
+      const item = document.createElement('li');
+      const number = document.createElement('span');
+      number.className = 'home-step-number';
+      number.textContent = index + 1;
+      number.setAttribute('aria-hidden', 'true');
+      const body = document.createElement('div');
+      const heading = document.createElement('h3');
+      heading.textContent = title;
+      const paragraph = document.createElement('p');
+      paragraph.textContent = text;
+      body.append(heading, paragraph);
+      item.append(number, body);
+      return item;
+    }));
+    start.href = card.querySelector('.home-card-link').href;
+    button.setAttribute('aria-expanded', 'true');
+    dialog.showModal();
+    document.documentElement.classList.add('home-howto-open');
+    dialog.scrollTop = 0;
+  });
+  root.querySelector('.home-sheet-close').addEventListener('click', () => dialog.close());
+  start.addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target !== dialog) return;
+    const rect = dialog.getBoundingClientRect();
+    if (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom) dialog.close();
+  });
+  dialog.addEventListener('close', () => {
+    document.documentElement.classList.remove('home-howto-open');
+    trigger?.setAttribute('aria-expanded', 'false');
+    trigger?.focus({ preventScroll: true });
+  });
+})();
+}
+</script>
 <style>/* Shared HKChat mobile identity. */
 :is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome){
  --p-bg:light-dark(#fff,#17151b);--p-surface:light-dark(#fff,#211e25);--p-text:light-dark(#171922,#f4f0f6);--p-muted:light-dark(#72717b,#b8b2bf);--p-line:light-dark(#e4e2e7,#403946);--p-soft:light-dark(#f7f1f9,#322637);--p-primary:light-dark(#9952a6,#d2a2de);--p-on:light-dark(#fff,#2c1932);--p-lilac:light-dark(#f7f2fb,#2c2433);--p-warm:light-dark(#faf6f1,#332c23);--p-warn:light-dark(#866443,#dfbd94);
