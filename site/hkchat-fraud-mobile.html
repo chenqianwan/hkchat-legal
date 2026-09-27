@@ -84,13 +84,7 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
 #hkdetect .d-domain-icon.finance{background:light-dark(#edf1f8,#263045);color:light-dark(#657ea5,#aec4e8)}
 #hkdetect .d-domain-icon.work{background:light-dark(#f8f0e6,#382e23);color:light-dark(#a47c4c,#dcb78a)}
 #hkdetect .d-domain-icon.daily{background:light-dark(#f0eff8,#302c40);color:light-dark(#8173a3,#c1b1e0)}
-#hkdetect .d-domain>.d-domain-icon{background:#251e32b8;color:#f2d8fc;border:1px solid #ffffff26;box-shadow:0 2px 9px #00000012;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
-#hkdetect .d-domain>.d-domain-icon.wellness{background:#38202cb8;color:#f4d6e3}
-#hkdetect .d-domain>.d-domain-icon.insurance{background:#183729b8;color:#d0f1de}
-#hkdetect .d-domain>.d-domain-icon.finance{background:#1b2c43b8;color:#d1e4ff}
-#hkdetect .d-domain>.d-domain-icon.work{background:#392b19b8;color:#f7dfb9}
-#hkdetect .d-domain>.d-domain-icon.daily{background:#29223eb8;color:#e7dcff}
-#hkdetect .d-domain strong{font-size:16px;font-weight:600;line-height:1.5;margin-bottom:6px;text-shadow:0 1px 6px #14101980}
+#hkdetect .d-domain strong{font-size:16px;font-weight:600;line-height:1.5;margin-top:50px;margin-bottom:6px;text-shadow:0 1px 6px #14101980}
 #hkdetect .d-domain small{font-size:12px;line-height:1.65;color:#f0edf5;text-shadow:0 1px 4px #14101980}
 #hkdetect .d-domain-go{display:flex;align-items:center;gap:7px;font-size:11px;color:#f1d2fc;margin-top:auto;padding-top:12px}
 #hkdetect .d-domain-go svg{width:14px;height:14px}
@@ -611,7 +605,7 @@ function customTopicForm(domain){
 }
 function mission(){return '<div class="d-mission"><span>'+icon('messages-square')+'最多 5 轮</span><span>'+icon('files')+'自由追问</span><span>'+icon('scan-search')+'随时判断</span></div><p class="d-footnote">虚构案件 · 每局约 5 分钟</p>';}
 function hub(){
- return '<div class="d-hero d-hub-hero"><span class="d-overline">HKChat · 防诈防骗演练</span><h1>醒目防騙</h1><p>从熟悉的生活领域，练习识破可疑话术。</p></div>'+resumeCard()+'<div class="d-sectionhead"><h2>先选一个防骗领域</h2><button class="d-link" data-action="random-domain">'+icon('shuffle')+'随机选</button></div><div class="d-domain-grid">'+DOMAINS.map(domain=>'<button class="d-domain" data-domain="'+domain.id+'"><span class="d-domain-photo" aria-hidden="true"><img src="'+DOMAIN_PHOTOS[domain.id]+'" width="640" height="480" alt="" decoding="async"></span><span class="d-domain-icon '+domain.id+'">'+icon(domain.icon)+'</span><strong>'+esc(domain.label)+'</strong><small>'+esc(domain.description)+'</small><span class="d-domain-go">'+domain.cases.length+' 个场景 '+icon('arrow-up-right')+'</span></button>').join('')+'</div>'+customTopicForm()+mission();
+ return '<div class="d-hero d-hub-hero"><span class="d-overline">HKChat · 防诈防骗演练</span><h1>醒目防騙</h1><p>从熟悉的生活领域，练习识破可疑话术。</p></div>'+resumeCard()+'<div class="d-sectionhead"><h2>先选一个防骗领域</h2><button class="d-link" data-action="random-domain">'+icon('shuffle')+'随机选</button></div><div class="d-domain-grid">'+DOMAINS.map(domain=>'<button class="d-domain" data-domain="'+domain.id+'"><span class="d-domain-photo" aria-hidden="true"><img src="'+DOMAIN_PHOTOS[domain.id]+'" width="640" height="480" alt="" decoding="async"></span><strong>'+esc(domain.label)+'</strong><small>'+esc(domain.description)+'</small><span class="d-domain-go">'+domain.cases.length+' 个场景 '+icon('arrow-up-right')+'</span></button>').join('')+'</div>'+customTopicForm()+mission();
 }
 function domainPage(){
  const domain=findDomain(state.domain);
