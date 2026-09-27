@@ -21,7 +21,7 @@
   }, { once: true });
 })();
 
-(() => {let state=null;const key='hkchat-mobile:'+location.pathname;try{state=JSON.parse(localStorage.getItem(key)||'null')}catch{}window.openai={widgetState:state,setWidgetState:async function(next){this.widgetState=next;try{localStorage.setItem(key,JSON.stringify(next))}catch{}}};})();</script><style>html,body{margin:0;padding:0!important;width:100%;min-height:100%;overflow-x:clip;scroll-behavior:auto}body{display:block;background:light-dark(#f7f7f8,#100e13)}#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot{min-height:100svh;max-width:480px;margin:0 auto;border-radius:0!important}input,textarea,select{font-size:16px}button,a,input,select,textarea,summary{touch-action:manipulation}button{-webkit-tap-highlight-color:transparent}noscript{display:block;padding:24px;font:16px sans-serif}</style><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17151b" media="(prefers-color-scheme: dark)"></head><body>
+(() => {let state=null;const key='hkchat-mobile:'+location.pathname;try{state=JSON.parse(localStorage.getItem(key)||'null')}catch{}window.openai={widgetState:state,setWidgetState:async function(next){this.widgetState=next;try{localStorage.setItem(key,JSON.stringify(next))}catch{}}};})();</script><style>html,body{margin:0;padding:0!important;width:100%;min-height:100%;overflow-x:clip;scroll-behavior:auto;color-scheme:light dark;background:light-dark(#fff,#17151b)}body{display:block}@media(min-width:481px){body{background:light-dark(#f7f7f8,#100e13)}}#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot{min-height:100svh;min-height:100dvh;max-width:480px;margin:0 auto;border-radius:0!important}input,textarea,select{font-size:16px}button,a,input,select,textarea,summary{touch-action:manipulation}button{-webkit-tap-highlight-color:transparent}noscript{display:block;padding:24px;font:16px sans-serif}</style><meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)"><meta name="theme-color" content="#17151b" media="(prefers-color-scheme: dark)"></head><body>
 <noscript>请在手机浏览器中打开此 HTML，并启用 JavaScript 来体验交互。</noscript>
 <script>
 /**
@@ -39,13 +39,13 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
 
 </script>
 <style>
-#hkhome{max-width:480px;min-height:100svh;margin:auto;color-scheme:light dark}
+#hkhome{max-width:480px;min-height:100svh;margin:auto;color-scheme:light dark;display:flex;flex-direction:column}
 #hkhome *{box-sizing:border-box}
 #hkhome [hidden]{display:none!important}
 #hkhome :is(h1,h2,p){margin:0}
 #hkhome a{color:inherit;text-decoration:none;-webkit-tap-highlight-color:transparent}
 #hkhome :is(a,button):focus-visible{outline:3px solid var(--p-primary);outline-offset:4px}
-#hkhome .home-main{padding:25px 18px max(25px,env(safe-area-inset-bottom));background:radial-gradient(ellipse 90% 160px at 50% 0,var(--p-soft),transparent)}
+#hkhome .home-main{flex:1;display:flex;flex-direction:column;padding:25px 18px max(14px,env(safe-area-inset-bottom));background:radial-gradient(ellipse 90% 160px at 50% 0,var(--p-soft),transparent)}
 #hkhome .home-hero{padding:4px 0 25px;text-align:center}
 #hkhome .home-hero h1{font-size:27px;line-height:1.4;letter-spacing:-.7px;font-weight:650}
 #hkhome .home-hero h1 span{color:var(--p-primary)}
@@ -80,18 +80,20 @@ lucide.createIcons({icons});\``);if(typeof c>"u")throw new Error("`createIcons()
 #hkhome .home-app[data-app="match"] .home-photo-layer img{object-position:center 55%}
 #hkhome .home-note{display:flex;align-items:center;justify-content:center;gap:7px;margin-top:22px;font-size:11px;line-height:1.8;color:var(--p-muted)}
 #hkhome .home-note svg{width:14px;height:14px;color:var(--p-primary)}
-#hkhome .p-footer{margin-top:0;padding-top:13px}
+#hkhome .home-main .p-footer{margin-top:auto;padding:28px 0 0;background:transparent}
 html.home-howto-open,html.home-howto-open body{overflow:hidden}
 #hkhome .home-howto{position:fixed;inset:0;margin:auto auto 0;width:min(100%,480px);max-width:100%;max-height:85dvh;padding:0;border:1px solid var(--p-line);border-bottom:0;border-radius:25px 25px 0 0;background:var(--p-surface);color:var(--p-text);box-shadow:0 -10px 60px #0003;overflow-y:auto;overscroll-behavior:contain}
 #hkhome .home-howto::backdrop{background:#100b18a8;backdrop-filter:blur(3px)}
 #hkhome .home-sheet-grip{width:35px;height:4px;margin:10px auto 0;border-radius:4px;background:var(--p-line)}
 #hkhome .home-sheet-head{display:flex;align-items:center;gap:10px;padding:12px 20px 0}
 #hkhome .home-sheet-label{font-size:12px;color:var(--p-muted);flex:1}
-#hkhome .home-sheet-close{display:grid;place-items:center;width:44px;height:44px;margin-right:-8px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--p-muted);cursor:pointer}
+#hkhome .home-sheet-close{display:grid;place-items:center;flex-shrink:0;width:44px;height:44px;margin-right:-8px;padding:0;border:0;border-radius:50%;background:transparent;color:var(--p-muted);cursor:pointer;appearance:none;-webkit-appearance:none;-webkit-tap-highlight-color:transparent}
 #hkhome .home-sheet-close svg{width:21px;height:21px}
-#hkhome .home-sheet-close:hover{background:var(--p-soft)}
+#hkhome .home-sheet-close:active{background:var(--p-soft)}
+@media(hover:hover){#hkhome .home-sheet-close:hover{background:var(--p-soft)}}
 #hkhome .home-sheet-body{padding:14px 22px max(24px,env(safe-area-inset-bottom))}
 #hkhome .home-sheet-body h2{font-size:25px;line-height:1.4;letter-spacing:-.5px}
+#hkhome #home-howto-title:focus{outline:none}
 #hkhome .home-sheet-intro{margin-top:10px;font-size:14px;line-height:1.85;color:var(--p-muted)}
 #hkhome .home-sheet-steps{display:grid;gap:19px;list-style:none;margin:25px 0 27px;padding:0}
 #hkhome .home-sheet-steps li{display:flex;align-items:flex-start;gap:12px}
@@ -103,7 +105,7 @@ html.home-howto-open,html.home-howto-open body{overflow:hidden}
 @media(min-width:600px){#hkhome .home-howto{margin:auto;border:1px solid var(--p-line);border-radius:25px}#hkhome .home-sheet-grip{display:none}#hkhome .home-sheet-head{padding-top:18px}}
 @media(hover:hover){#hkhome .home-app:hover{border-color:var(--p-primary);transform:translateY(-2px)}}
 #hkhome .home-app:active{border-color:#d2a4df}
-@media(max-width:350px){#hkhome .home-main{padding:22px 14px max(22px,env(safe-area-inset-bottom))}#hkhome .home-hero h1{font-size:25px}#hkhome .home-hero p{font-size:12px}#hkhome .home-grid{gap:10px}#hkhome .home-app{min-height:200px;padding:13px 12px;border-radius:17px}#hkhome .home-app h2{font-size:16px;min-height:47px}#hkhome .home-app p{font-size:11px;line-height:1.8}#hkhome .home-quiz-modes{gap:5px}#hkhome .home-quiz-mode{padding-inline:3px;font-size:11px}}
+@media(max-width:350px){#hkhome .home-main{padding:22px 14px max(14px,env(safe-area-inset-bottom))}#hkhome .home-hero h1{font-size:25px}#hkhome .home-hero p{font-size:12px}#hkhome .home-grid{gap:10px}#hkhome .home-app{min-height:200px;padding:13px 12px;border-radius:17px}#hkhome .home-app h2{font-size:16px;min-height:47px}#hkhome .home-app p{font-size:11px;line-height:1.8}#hkhome .home-quiz-modes{gap:5px}#hkhome .home-quiz-mode{padding-inline:3px;font-size:11px}}
 @media(prefers-reduced-motion:reduce){#hkhome .home-app{transition:none}}
 </style>
 <div id="hkhome" lang="zh-HK">
@@ -165,9 +167,9 @@ html.home-howto-open,html.home-howto-open body{overflow:hidden}
 <footer class="p-footer">HKChat · Legal</footer></main>
 <dialog class="home-howto" id="home-howto" aria-labelledby="home-howto-title" aria-describedby="home-howto-intro">
  <div class="home-sheet-grip" aria-hidden="true"></div>
- <div class="home-sheet-head"><span class="home-sheet-label">玩法說明</span><button class="home-sheet-close" type="button" aria-label="關閉玩法說明" autofocus><i data-lucide="x" aria-hidden="true"></i></button></div>
+ <div class="home-sheet-head"><span class="home-sheet-label">玩法說明</span><button class="home-sheet-close" type="button" aria-label="關閉玩法說明"><i data-lucide="x" aria-hidden="true"></i></button></div>
  <div class="home-sheet-body">
-  <h2 id="home-howto-title"></h2>
+  <h2 id="home-howto-title" tabindex="-1" autofocus></h2>
   <p class="home-sheet-intro" id="home-howto-intro"></p>
   <ol class="home-sheet-steps" id="home-howto-steps"></ol>
   <a class="home-sheet-start" id="home-howto-start" href="hkchat-quiz-mobile.html">開始玩<i data-lucide="arrow-right" aria-hidden="true"></i></a>
@@ -328,6 +330,7 @@ const HOWTO = {
     start.href = card.querySelector('.home-card-link').href;
     button.setAttribute('aria-expanded', 'true');
     dialog.showModal();
+    root.querySelector('#home-howto-title').focus({ preventScroll: true });
     document.documentElement.classList.add('home-howto-open');
     dialog.scrollTop = 0;
   });
@@ -348,6 +351,7 @@ const HOWTO = {
 </script>
 <style>/* Shared HKChat mobile identity. */
 :is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot){
+ min-height:100svh;min-height:100dvh;
  --p-bg:light-dark(#fff,#17151b);--p-surface:light-dark(#fff,#211e25);--p-text:light-dark(#171922,#f4f0f6);--p-muted:light-dark(#72717b,#b8b2bf);--p-line:light-dark(#e4e2e7,#403946);--p-soft:light-dark(#f7f1f9,#322637);--p-primary:light-dark(#9952a6,#d2a2de);--p-on:light-dark(#fff,#2c1932);--p-lilac:light-dark(#f7f2fb,#2c2433);--p-warm:light-dark(#faf6f1,#332c23);--p-warn:light-dark(#866443,#dfbd94);
  --hk-bg:var(--p-bg);--hk-paper:var(--p-surface);--hk-text:var(--p-text);--hk-muted:var(--p-muted);--hk-line:var(--p-line);--hk-soft:var(--p-soft);--hk-green:var(--p-primary);--hk-on:var(--p-on);--hk-blue:light-dark(#727bb4,#aeb7ec);--hk-amber:var(--p-warn);--hk-red:light-dark(#b56c7b,#dea1b0);
  --ct-bg:var(--p-bg);--ct-paper:var(--p-surface);--ct-text:var(--p-text);--ct-muted:var(--p-muted);--ct-line:var(--p-line);--ct-soft:var(--p-soft);--ct-green:var(--p-primary);--ct-on:var(--p-on);--ct-warn:var(--p-warn);--ct-warn-bg:var(--p-warm);--ct-bad:light-dark(#ae576b,#e6a0b2);--ct-blue:light-dark(#727bb4,#aeb7ec);
@@ -434,7 +438,7 @@ const HOWTO = {
 :is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-nav a{display:flex;gap:11px;align-items:center;min-height:49px;padding:11px 13px;color:var(--p-text);font-size:14px;text-decoration:none;border-radius:11px}
 :is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-nav a svg{color:var(--p-primary)}
 :is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-nav a[aria-current=page]{background:var(--p-soft);color:var(--p-primary)}
-:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-footer{position:relative;margin-top:28px;padding:22px 0 7px;text-align:center;font-size:11px;color:var(--p-muted);line-height:1.7;background:radial-gradient(ellipse at 50% 100%,light-dark(#f4eaf8,#29202f),transparent 70%)}
+:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-footer{position:relative;margin-top:28px;padding:22px 0 7px;text-align:center;font-size:11px;color:var(--p-muted);line-height:1.7;background:transparent}
 @media(max-width:350px){:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) :is(.hk-main,.ct-main,.m-main){padding-left:14px!important;padding-right:14px!important}:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-header{padding-left:14px;padding-right:14px}:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) .p-wordmark{font-size:22px}:is(#hklegal,#hkcourt,#hkmoral,#hkdetect,#hkquiz,#hkfineprint,#hkshare,#hkauthenticity,#hkmediation,#hkcouncil,#hkhome,#hkmatch,#hkspot) h1{font-size:27px}#hkmoral .m-preset{padding:10px 8px;font-size:12px}#hkmoral .m-axis{font-size:11px}}
 
 /* Shared photo introductions: keep title copy selectable, independent of the image. */
